@@ -230,3 +230,16 @@ int bsrcharray(int* array, int b, int value, int min, int max){
 	}//end while
 	return -1;
 }//end bsrcharray()
+void shufarray(int* array, int b){
+	int i,k=0;
+	srand(time(NULL));//set the seed
+	/* Starting from the last element and swap one by one.
+	 * NOTE: i > 0 it's because there's no need to run for the first element */
+	for (i = b-1; i > 0; i--){
+		int j = rand() % (i+1);
+		//swap
+		k =  array[i];
+		array[i] = array[j];
+		array[j] = k;
+	}//end for
+}//end shufarray()
