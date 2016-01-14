@@ -243,3 +243,20 @@ void shufarray(int* array, int b){
 		array[j] = k;
 	}//end for
 }//end shufarray()
+void uniqarray(int* array, int b){
+	/*
+	 *NOTE: the duplicated elements are removed and send back
+	 *to the end of the array
+	 */
+	for (int i = 0; i < b; i++) {
+		for (int j = i + 1; j < b;) {
+			if (array[j] == array[i]) {
+				for (int k = j; k < b; k++) {
+					array[k] = array[k + 1];
+					}//end for
+	        		b--;
+			} else
+				j++;
+		}//end inner for
+	}//end outter for
+}//end uniqarray()
