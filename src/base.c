@@ -251,6 +251,27 @@ int randinarray(int* array, int b){
 	return array[1 + rand()% b-1]; 
 }//end randinarray()
 void exparray(int* array, int b){
-	
+	FILE *f = fopen("BASE.db", "w");
+	if (f == NULL)
+	{
+		printf("Error Reading File\n");
+		exit (0);
+	}
+	for(int j=0;j<b;++j){
+		fprintf(f, "%d,",array[j]);
+	}//end for
+	fclose(f);
 }//end exparray()
-
+void imparray(int* array,int b){
+	FILE *f;
+	f = fopen("BASE.db", "r");
+	if (f == NULL)
+	{
+		printf("Error Reading File\n");
+		exit (0);
+	}//end if
+    for (int i = 0; i < b; i++)
+	{
+		fscanf(f, "%d,", &array[i] );
+	}//end for
+}//end imparray()
