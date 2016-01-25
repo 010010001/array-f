@@ -49,7 +49,7 @@ int main(int argc,char *argv[]) {
 		scanf("%s", name);
 	puts("what is the size of you array?");
 	scanf("%lu", &a_size);
-	puts("fill your array withe elements");
+	puts("fill your array withe elements:");
 	printf(">>");
 	
 	for( i=0; i<=a_size;++i){
@@ -68,7 +68,7 @@ int main(int argc,char *argv[]) {
 			printf("]");}//end if
 		 */
 	}//end for
-	printf("\t\tthis is the filled array\n\n");
+	printf("\t\this is the filled array\n\n");
 	H_3: 
 	parray(arr, a_size, name);
 	puts("");
