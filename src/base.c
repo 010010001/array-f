@@ -247,9 +247,11 @@ long int sumarray(int* array, int b){
 	}//end for
 	return sum;
 }//end sunarray()
+/*
 int randinarray(int* array, int b){
 	return array[1 + rand()% b-1]; 
 }//end randinarray()
+*/
 void exparray(int* array, int b){
 	FILE *f = fopen("BASE.db", "w");
 	if (f == NULL)
