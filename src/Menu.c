@@ -2,14 +2,14 @@
 #include "Menu.h"
 void menu(void){
 
-	printf(KRED);
+	printf(KRED);//set the color of the terminal to red
 	puts("\t\t========================================");
 	puts("\t\t==[1]========Main manipulations=========");
 	puts("\t\t==[2]=======Order and Frequency=========");
 	puts("\t\t==[3]=====Arithmetic manipulations======");
 	puts("\t\t==[4]=============QUIT!=================");
 	puts("\t\t========================================");
-	printf(RESET);
+	printf(RESET);//reset the color
 	printf(KBLU ">>>" RESET);	
 	while(1){
 	scanf("%d", &chx);
@@ -28,7 +28,9 @@ void menu(void){
 		}//end switch
 	}//end while
 }//end menu()
+/*beginning of arith_manip()*/
 void arith_manip(void){
+	/*acsess to all the arithmitique manipulitions*/
 	H_1:
 	printf(KRED);
 	puts("\t\t========================================");
@@ -167,7 +169,6 @@ void other(void){
 				break;
 			case 2://Binary Search
 				puts("underdev...");
-				/*
 				printf(KRED);
 				printf("\t\tWARNING!\n\n");
 				puts("\tTHE ARRAY MUST BE IN ORDER!");
@@ -197,7 +198,6 @@ void other(void){
 				}else{
 					puts("not found!!");
 				}//end if else
-				*/
 				break;//case break
 			case 3://Fill Array 
 				printf(KRED);
