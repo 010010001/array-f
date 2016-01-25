@@ -4,6 +4,7 @@
  #include <stdlib.h>
  #include <string.h>
  #include <time.h>
+ //the terminal colors 
   #define KNRM  "\x1B[0m"
   #define KRED  "\x1B[31m"
   #define KGRN  "\x1B[32m"
@@ -28,14 +29,14 @@
  void freqarray(int*, int, int);//freqarray() prototype
  void modearray(int*, int , int);//modearray() prototype
  float meanarray(int*, int);//meanarray() prototype
- int srcharray(int*, int, int);
- int bsrcharray(int*, int, int, int);
- void shufarray(int*, int);
- int uniqarray(int*, int);
- long int sumarray(int*, int);
- int randinarray(int* , int );
- void exparray(int* array, int b);
- void imparray(int* array,int b);
+ int srcharray(int*, int, int);//srcharray() prototype
+ int bsrcharray(int*, int, int, int);//bsrcharray() prototype
+ void shufarray(int*, int);//shufarray() prototype
+ int uniqarray(int*, int);//uniqarray() prototype
+ long int sumarray(int*, int);//sumarray() prototype
+ int randinarray(int* , int );//randinarray() prototype
+ void exparray(int* array, int b);//exparray() prototype
+ void imparray(int* array,int b);//imparray() prototype
  /*functions prototype*/
   int arr[ARRAY_SIZE];
   size_t a_size; 
