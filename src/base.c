@@ -277,3 +277,27 @@ void imparray(int* array,int b){
 		fscanf(f, "%d,", &array[i] );
 	}//end for
 }//end imparray()
+*<--------------SETUP-------------->*/
+ 
+/*=============-MATH-=============*/
+			//SMIA
+	branch[0].Departement = MATH;
+	branch[0].Year = first;
+	
+			//SMI/SMA
+	branch[1].Departement = MATH;
+	branch[1].Year = second;
+	
+			//SMF/SMA
+	branch[2].Departement = MATH;
+	branch[2].Year = licence;
+	
+			//MASTER-MATH
+	branch[3].Departement = MATH;
+	branch[3].Year = master;
+	
+			//DOCTURAT-MATH
+	branch[4].Departement = MATH;
+	branch[4].Year = docturat;
+/*=============-MATH-=============*/
+/*<--------------SETUP-------------->*/	
